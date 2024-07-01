@@ -25,5 +25,5 @@ export function Button({
   disabled = false,
   icon: Icon,
 }: CustomButtonProps) {
-  return <div>Button</div>;
+  return <button onClick={onClick}>{label}</button>;
 }
