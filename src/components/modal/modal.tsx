@@ -1,7 +1,16 @@
-import React from 'react'
+import React from "react";
 
-export function Modal() {
-  return (
-    <div>Modal</div>
-  )
+interface ModalProps {
+  showModal: boolean;
+  containerClasses?: string;
+  children: React.ReactNode;
+  setShowModal: (value: boolean) => void;
+}
+export function Modal({
+  children,
+  showModal,
+  setShowModal,
+  containerClasses,
+}: ModalProps) {
+  return <div>Modal</div>;
 }
