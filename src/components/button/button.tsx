@@ -1,5 +1,4 @@
 import { LucideIcon } from "lucide-react";
-import React from "react";
 
 type CustomButtonProps = {
   onClick?: (() => void) | undefined;
