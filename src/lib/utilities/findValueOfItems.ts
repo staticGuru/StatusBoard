@@ -1,5 +1,5 @@
 import { UniqueIdentifier } from "@dnd-kit/core";
-import { ContainerType } from "..";
+import { ContainerType } from "../index";
 
 export function findValueOfItems(
   containers: ContainerType[],
