@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import { Button, Modal } from "./components/intex";
+import { Button, Input, Modal } from "./components/intex";
 
 function App() {
   const [showAddContainerModal, setShowAddContainerModal] = useState(false);
@@ -15,7 +15,18 @@ function App() {
           <h1 className="text-gray-800 text-xl md:text-2xl font-bold text-center mx-auto">
             Add Container
           </h1>
-      
+          <Input
+            type="text"
+            placeholder="Container Title"
+            name="containername"
+            value={containerName}
+            onChange={(event) => setContainerName(event.target.value)}
+          />
+          <Button
+            fullWidth={true}
+            label="Add container"
+     
+          />
         </div>
       </Modal>
       <div className="flex items-center justify-between gap-y-2">
