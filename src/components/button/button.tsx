@@ -25,5 +25,9 @@ export function Button({
   disabled = false,
   icon: Icon,
 }: CustomButtonProps) {
-  return <button onClick={onClick}>{label}</button>;
+  return (
+    <button disabled={disabled} onClick={onClick}>
+      {label}
+    </button>
+  );
 }
