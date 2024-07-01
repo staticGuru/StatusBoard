@@ -1,7 +1,7 @@
 import { DragMoveEvent } from "@dnd-kit/core";
 import { arrayMove } from "@dnd-kit/sortable";
-import { ContainerType } from "../..";
 import { findValueOfItems } from "../findValueOfItems";
+import { ContainerType } from "../..";
 
 export function handleDragMove(
   event: DragMoveEvent,
