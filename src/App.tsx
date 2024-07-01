@@ -3,11 +3,12 @@ import "./App.css";
 import { Button, Input, Modal } from "./components/intex";
 
 function App() {
+  const [containerName, setContainerName] = useState("");
   const [showAddContainerModal, setShowAddContainerModal] = useState(false);
 
   return (
     <div className="mx-auto max-w-7xl">
-       <Modal
+      <Modal
         showModal={showAddContainerModal}
         setShowModal={setShowAddContainerModal}
       >
@@ -25,7 +26,15 @@ function App() {
           <Button
             fullWidth={true}
             label="Add container"
-     
+            onClick={() =>
+              onAddContainer(
+                containerName,
+                setContainerName,
+                setShowAddContainerModal,
+                addContainer
+              )
+            }
+            disabled={isContainerNameEmpty(containerName)}
           />
         </div>
       </Modal>
