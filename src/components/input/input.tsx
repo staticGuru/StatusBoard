@@ -1,7 +1,20 @@
-import React from 'react'
+import React from "react";
 
-export function Input() {
-  return (
-    <div>Input</div>
-  )
+type InputProps = {
+  type: string;
+  name: string;
+  value?: string;
+  shadow?: boolean;
+  placeholder?: string;
+  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
+};
+export function Input({
+  type,
+  name,
+  value = "",
+  placeholder = "",
+  onChange = () => {},
+  shadow = false,
+}: InputProps) {
+  return <div>Input</div>;
 }
