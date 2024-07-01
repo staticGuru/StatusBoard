@@ -50,6 +50,7 @@ export function Button({
         !bgLight && variantClasses[variant]
       }`}
     >
+      {Icon && <Icon size={18} />}
       {label}
     </button>
   );
