@@ -1,31 +1,26 @@
-# React + TypeScript + Vite
+# Kanban Status Board
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Kanban Status Board is a feature-rich and dynamic project management tool designed to streamline your workflow and enhance productivity. This project allows you to create, edit, and delete boards with ease, leveraging modern web technologies for an intuitive and seamless user experience.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Create Board**: Easily create new boards to organize your tasks and projects.
+- **Edit Board**: Edit existing boards to update information or change details.
+- **Delete Board**: Remove boards that are no longer needed.
+- **Drag and Drop**: Intuitive drag-and-drop functionality using DND kits to move tasks across boards effortlessly.
+- **Animations**: Smooth and engaging animations using Framer Motion to enhance user interaction.
+- **Freaky Design**: Unique and stylish design to make project management more enjoyable.
+- **State Management**: Utilizing Zustand store for efficient and scalable state management.
+- **Data Persistence**: Persistent data storage to ensure your boards and tasks are saved across sessions.
+- **Deployment**: The project is deployed and accessible via the following link:
 
-## Expanding the ESLint configuration
+[Kanban Status Board Deployment](guruvigneshstatusboard-staticgurus-projects.vercel.app)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Installation
 
-- Configure the top-level `parserOptions` property like this:
+To get started with the Kanban Status Board project locally, follow these steps:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-# StatusBoard
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/staticGuru/StatusBoard.git
+   cd StatusBoard
