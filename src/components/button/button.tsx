@@ -33,7 +33,7 @@ export function Button({
     : "";
 
   const variantClasses = {
-    default: "bg-indigo-500 text-white hover:bg-indigo-600",
+    default: "bg-pink-500 text-white hover:bg-pink-600",
     destructive: "bg-red-600 text-white hover:bg-red-700",
     outline: "border border-slate-300 bg-white hover:bg-slate-100",
     secondary: "bg-slate-700 text-white hover:bg-slate-800",
