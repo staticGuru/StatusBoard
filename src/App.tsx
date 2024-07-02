@@ -173,11 +173,11 @@ function App() {
           <div className="flex items-start gap-3">
             <Layout size={18} className="mt-1" />
             <h1 className="leading-[1]">
-              <span className="text-base font-semibold md:font-medium">
+              <span className="text-base text-gray-50 font-semibold md:font-medium">
                 Optimization
               </span>{" "}
               <br />
-              <span className="text-sm text-gray-500">
+              <span className="text-sm text-gray-400">
                 in list {containerNameForEditingItem}
               </span>
             </h1>
@@ -201,7 +201,7 @@ function App() {
         <div className="mt-8">
           <div className="flex gap-3 mb-3">
             <Text size={18} className="mt-1" />
-            <span className="text-base font-semibold md:font-medium">
+            <span className="text-base text-gray-50 font-semibold md:font-medium">
               Card Title
             </span>{" "}
           </div>
