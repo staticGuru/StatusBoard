@@ -38,6 +38,8 @@ import {
 } from "@dnd-kit/sortable";
 import { Layout, Text, Trash2 } from "lucide-react";
 
+import Nodata from "./assets/nodata.svg";
+
 function App() {
   const [containerName, setContainerName] = useState("");
   const { containers, setContainers, addContainer } = useContainerStore();
@@ -254,6 +256,11 @@ function App() {
         />
       </div>
       <div className="mt-10">
+        {!containers.length && (
+          <div className="h-full grid justify-center items-center">
+            <img src={Nodata} alt="SVG" className="w-full h-full" />
+          </div>
+        )}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           <DndContext
             sensors={sensors}
