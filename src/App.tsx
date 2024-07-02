@@ -1,11 +1,12 @@
 import { useState } from "react";
 import "./App.css";
 import { Button, Input, Modal } from "./components/intex";
-import { onAddContainer } from "./lib";
+import { isContainerNameEmpty, onAddContainer, useContainerStore } from "./lib";
 
 function App() {
   const [containerName, setContainerName] = useState("");
   const [showAddContainerModal, setShowAddContainerModal] = useState(false);
+  const { containers, setContainers, addContainer } = useContainerStore();
 
   return (
     <div className="mx-auto max-w-7xl">
