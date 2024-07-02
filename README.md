@@ -24,3 +24,18 @@ To get started with the Kanban Status Board project locally, follow these steps:
    ```bash
    git clone https://github.com/staticGuru/StatusBoard.git
    cd StatusBoard
+
+2. **Install packages**:
+   ```bash
+   npm install
+
+3. **Start the development server**:
+   ```bash
+   npm run dev
+  
+**Contributing**
+Contributions are welcome! If you have suggestions for improvements or want to report bugs, please open an issue or submit a pull request.
+
+**Contact**
+For any inquiries or feedback, please reach out to vigneshguru274@gmail.com.
+
