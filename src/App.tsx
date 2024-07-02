@@ -1,6 +1,5 @@
 import { useState } from "react";
-import "./App.css";
-import { Button, Input, Modal } from "./components/intex";
+import { Button, Container, Input, Items, Modal } from "./components";
 import {
   findContainerItems,
   findContainerNameByItemId,
@@ -37,7 +36,7 @@ import {
   SortableContext,
   sortableKeyboardCoordinates,
 } from "@dnd-kit/sortable";
-import { Container, Layout, Text, Trash2 } from "lucide-react";
+import { Layout, Text, Trash2 } from "lucide-react";
 
 function App() {
   const [containerName, setContainerName] = useState("");
@@ -70,13 +69,13 @@ function App() {
   );
 
   return (
-    <div className="mx-auto max-w-7xl">
+    <div className="mx-auto max-w-7xl p-2">
       <Modal
         showModal={showAddContainerModal}
         setShowModal={setShowAddContainerModal}
       >
         <div className="flex flex-col w-full items-start gap-y-4">
-          <h1 className="text-gray-800 text-xl md:text-2xl font-bold text-center mx-auto">
+          <h1 className="text-gray-50 text-xl md:text-2xl font-bold text-center mx-auto">
             Add Container
           </h1>
           <Input
@@ -103,7 +102,7 @@ function App() {
       </Modal>
       <Modal showModal={showAddItemModal} setShowModal={setShowAddItemModal}>
         <div className="flex flex-col w-full items-start gap-y-4">
-          <h1 className="text-gray-800 text-xl md:text-2xl font-bold text-center mx-auto">
+          <h1 className="text-gray-50 text-xl md:text-2xl font-bold text-center mx-auto">
             Add Card
           </h1>
           <Input
@@ -135,7 +134,7 @@ function App() {
         setShowModal={setShowEditContainerModal}
       >
         <div className="flex flex-col w-full items-start gap-y-4">
-          <h1 className="text-gray-800 text-xl md:text-2xl font-bold text-center mx-auto">
+          <h1 className="text-gray-50 text-xl md:text-2xl font-bold text-center mx-auto">
             Edit Container
           </h1>
           <Input
@@ -246,7 +245,7 @@ function App() {
         </div>
       </Modal>
       <div className="flex items-center justify-between gap-y-2">
-        <h1 className="text-gray-800 text-xl md:text-3xl font-bold">
+        <h1 className="text-gray-50 text-xl md:text-3xl font-bold">
           StatusBoard
         </h1>
         <Button
