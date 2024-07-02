@@ -9,7 +9,7 @@ interface ModalProps {
   children: React.ReactNode;
   setShowModal: (value: boolean) => void;
 }
-export function Modal({
+export default function Modal({
   children,
   showModal,
   setShowModal,
@@ -49,7 +49,7 @@ export function Modal({
             >
               <div
                 className={clsx(
-                  `mx-3 overflow relative w-full max-w-lg transform rounded-lg border border-gray-300 bg-white p-6 text-left shadow-xl transition-all`,
+                  `mx-3 overflow relative w-full max-w-lg transform rounded-lg border border-gray-700 bg-gray-600 p-6 text-left shadow-xl transition-all`,
                   containerClasses
                 )}
               >
