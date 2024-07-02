@@ -6,7 +6,7 @@ import { CSS } from "@dnd-kit/utilities";
 import { AnimatePresence } from "framer-motion";
 import Menu from "../menu/menu";
 import clsx from "clsx";
-import { Button } from "../intex";
+import { Button } from "..";
 
 type ContainerProps = {
   id: UniqueIdentifier;
@@ -50,20 +50,20 @@ export function Container({
         transform: CSS.Translate.toString(transform),
       }}
       className={clsx(
-        "w-full h-full border bg-slate-100 border-slate-200 rounded-lg flex flex-col ",
+        "w-full h-full border bg-slate-600 border-slate-700 rounded-lg flex flex-col ",
         isDragging && "opacity-50"
       )}
     >
       <div className="flex items-center justify-between rounded-t-lg pb-1">
         <h1
-          className="text-slate-700 text-base font-semibold flex-1 cursor-grab p-4"
+          className="text-gray-50 text-base font-semibold flex-1 cursor-grab p-4"
           {...listeners}
         >
           {title}
         </h1>
         <div className="relative">
           <button
-            className="text-slate-500 hover:text-gray-900 transition-colors pr-2 "
+            className="text-gray-50 hover:text-gray-900 transition-colors pr-2 "
             onClick={() => setMenuOpen(!isMenuOpen)}
           >
             <EllipsisVertical size={17} />
